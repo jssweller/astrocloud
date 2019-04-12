@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-r"""Package for implementing a Monte Carlo simulation of photons propagating through a scattering cloud.
+r"""Module for implementing a Monte Carlo simulation of photons propagating through a scattering cloud.
 
 """
 
