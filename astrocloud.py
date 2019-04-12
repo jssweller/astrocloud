@@ -244,7 +244,7 @@ if __name__ == '__main__':
     R = 10**6 # cm
     Dstar = R/math.tan(maxphi)    # star_distance
     Dobs = Dstar    # observer_distance
-    Phobs = np.pi/180/60*1   # observer_angle
+    Phobs = np.pi/180  # observer_angle
     asc = 10**-6
     scatter_type = 'uniform'
 
@@ -274,7 +274,7 @@ if __name__ == '__main__':
                 break
             cloud.photon_step(ph)
         phsteps.append(ph.get_numsteps())
-        if cloud.hit_target(ph):
+        if cloud.hit_target(ph)[0]:
             hits +=1
         if ph.get_pos()[2] < 0:
             reflected += 1
